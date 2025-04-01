@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVAT Members 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .member {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Official PVAT Members (CY 2025)</h1>
+    <div class="container"><!-- Members List -->
+    <script>
+        const members = [
+            "Mandy Alcoriza", "Sledge Alvarez", "Jennifer Arasan", "Leah Ariola", "Jayson Balewag",
+            "Myra Balganion", "Adriane Baranda", "Alexis Barbon", "Norben Barcelon", "Jeffrey Barrientos",
+            "Maria Rosario Botacion", "Marc Jaeron Castillar", "John Benedict Castillo", "Kathleen Joy Cepe", "Angelo Colores",
+            "Menchu Concepcion", "Reine Cruz", "Jocelyn Del Rosario", "Edcor Escorel", "Rowena Estella",
+            "Arden Estrada", "John Philip Felipe", "Mary Grace Fortes", "Mark Anthonie Francisco", "Francese Ann Gacusan",
+            "Angel Anne Ilaida", "Bernardo Joaquin", "Mark Louie Julao", "Ruth Lara", "Eduard Laurente",
+            "Abimelec Llarena", "Kent Melvin Miranda", "Sam Montaniel", "Justine Mae Navidad", "Hipolito Orio",
+            "Angelo Pagulong", "Arjay Pajarillo", "Lumer Pajarillo", "Achilles Paril", "Pepito Pascua",
+            "Harold Pavia", "Jamie Rose Peña", "Joven Racelis", "Miko Arianne Racelis", "Ryan Felipe Roque",
+            "Jose Rey San Juan", "Lauro Jr. Sarmiento", "Junella Sebastian", "John Mattew Venturina"
+        ];
+        
+        const container = document.querySelector(".container");
+        members.forEach(name => {
+            let imgName = name.toLowerCase().replace(/ /g, "_") + ".jpg";
+            let memberDiv = `
+                <div class="member">
+                    <img src="images/${imgName}" alt="${name}">
+                    <h3>${name}</h3>
+                </div>
+            `;
+            container.innerHTML += memberDiv;
+        });
+    </script>
+</div>
+
+</body>
+</html>
